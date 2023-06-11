@@ -1,0 +1,23 @@
+{   
+    "Name" : "Naveen",
+    "SellerID" : "23hjhb239",
+    "Product": {
+        "Brand name": "Nike",
+        "Product name": "DownShifters",
+        "Category": "Shoe",
+        "Variation":{
+            "Variation1": {
+                "Color" : "black",
+                "Quantity" : 23,
+                "Price" : 3422,
+                "Images" : "http://images"
+            },
+            "Variation2": {
+                "Color" : "White",
+                "Quantity" : 13,
+                "Price" : 2322,
+                "Images" : "http://images2"
+            }
+        }
+    }
+}

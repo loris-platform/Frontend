@@ -2,26 +2,87 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root{
+    --frame-color: rgb(216, 216, 216);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Login Page */
+
+.loginPageDiv{
+    width: 97vw;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.loginDiv{
+    background-color: white;
+    height: 35vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginDiv svg{
+    color: #DB4437;
+    margin-right: 5px;
+    margin-top: -2px;
+}
+
+.loginBtn{
+    padding: 0.7rem 1rem;
+    background: rgb(24, 24, 24);
+    color: rgb(244, 244, 244);
+    border: 1px solid #303030;
+    border-radius: 9px;
+}
+
+
+
+/* Navbar */
+
+
+.mainContainer{
+    width: 97vw;
+    height: 87.5vh;
+    background: #D9D9D9;
+    margin-left: 1.5vw;
+}
+
+
+.navbarContainer{
+    padding: 1.5vw;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbarContainer h1:first-child{
+    font-family: 'Apple LiGothic';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+
+.profileIcon svg{
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-left: 2rem;
+}
+
+.DropdownDiv{
+    position: absolute;
+    background-color: white;
+    padding: 1rem;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, .08);
+    right: 1rem;
+    width: 10rem;
+}
+.DropdownDiv ul{
+    line-height: 2rem;
 }
